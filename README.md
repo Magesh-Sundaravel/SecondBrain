@@ -2,7 +2,9 @@
 
 A company second-brain agent that answers natural-language questions using a Notion workspace as its only knowledge source, via the Notion MCP server.
 
-Project status: scaffold only. Specification and implementation are in progress — see `docs/` once available.
+Project status: architecture complete; foundational implementation is in progress. The
+read-only Notion MCP boundary is implemented, while MCP connectivity and the LangGraph
+reasoning loop are the next milestones. See `docs/spec.md` and `docs/ARCHITECTURE.md`.
 
 ## Development Setup
 
