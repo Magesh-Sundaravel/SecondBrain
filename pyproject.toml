@@ -1,14 +1,23 @@
 [project]
 name = "secondbrain"
 version = "0.1.0"
-description = "Add your description here"
+description = "A read-only Notion-backed company knowledge agent"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = []
 
+[project.scripts]
+secondbrain = "secondbrain.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [dependency-groups]
 dev = [
+    "hatchling>=1.27.0",
     "pre-commit>=4.6.0",
+    "pytest-asyncio>=1.3.0",
     "pytest>=9.1.1",
     "ruff>=0.15.21",
 ]
